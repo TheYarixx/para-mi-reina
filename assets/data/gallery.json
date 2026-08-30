@@ -1,0 +1,74 @@
+{
+  "title": "Las pequeñas cosas que me recuerdan a ti",
+  "subtitle": "Cada mirada, cada sonrisa y cada instante tuyo guardado como un tesoro.",
+  "items": [
+    {
+      "src": "assets/img/gallery/provas-do-meu-amor/1-prova-do-meu-amor-por-voce.jpg.jpeg",
+      "alt": "Recuerdo de ti 1",
+      "caption": "Esta sonrisa podría arreglarme un día entero."
+    },
+    {
+      "src": "assets/img/gallery/provas-do-meu-amor/2-prova-do-meu-amor-por-voce.jpeg",
+      "alt": "Recuerdo de ti 2",
+      "caption": "La forma en que miras al mundo me transmite tanta paz."
+    },
+    {
+      "src": "assets/img/gallery/provas-do-meu-amor/3-prova-do-meu-amor-por-voce.jpeg",
+      "alt": "Recuerdo de ti 3",
+      "caption": "Uno de mis detalles favoritos de ti. Simply beautiful."
+    },
+    {
+      "src": "assets/img/gallery/provas-do-meu-amor/4-prova-do-meu-amor-por-voce.jpeg",
+      "alt": "Recuerdo de ti 4",
+      "caption": "Tu elegancia y dulzura en un solo instante."
+    },
+    {
+      "src": "assets/img/gallery/provas-do-meu-amor/5-prova-do-meu-amor-por-voce.jpeg",
+      "alt": "Recuerdo de ti 5",
+      "caption": "Tu risa es la melodía más bonita que conozco. Mon amour."
+    },
+    {
+      "src": "assets/img/gallery/provas-do-meu-amor/6-prova-do-meu-amor-por-voce.jpeg",
+      "alt": "Recuerdo de ti 6",
+      "caption": "Me encanta la paz que transmites en esta foto."
+    },
+    {
+      "src": "assets/img/gallery/provas-do-meu-amor/7-prova-do-meu-amor-por-voce.jpeg",
+      "alt": "Recuerdo de ti 7",
+      "caption": "Un pequeño detalle tuyo que se quedó grabado en mí."
+    },
+    {
+      "src": "assets/img/gallery/provas-do-meu-amor/8-prova-do-meu-amor-por-voce.jpeg",
+      "alt": "Recuerdo de ti 8",
+      "caption": "Eres hermosa en cada instante. You take my breath away."
+    },
+    {
+      "src": "assets/img/gallery/provas-do-meu-amor/9-prova-do-meu-amor-por-voce.jpeg",
+      "alt": "Recuerdo de ti 9",
+      "caption": "Guardar fotos tuyas es guardar un trocito de felicidad."
+    },
+    {
+      "src": "assets/img/gallery/provas-do-meu-amor/10-prova-do-meu-amor-por-voce.jpeg",
+      "alt": "Recuerdo de ti 10",
+      "caption": "Tu luz ilumina cualquier lugar donde estés."
+    },
+    {
+      "src": "assets/img/gallery/provas-do-meu-amor/11-prova-do-meu-amor-por-voce.jpeg",
+      "alt": "Recuerdo de ti 11",
+      "caption": "Simplemente tú, perfecta tal y como eres."
+    },
+    {
+      "src": "assets/img/gallery/provas-do-meu-amor/12-prova-do-meu-amor-por-voce.jpeg",
+      "alt": "Recuerdo de ti 12",
+      "caption": "Cada detalle tuyo me enamora un poco más."
+    }
+  ],
+  "captionLines": [
+    "Esta sonrisa podría arreglarme un día entero.",
+    "La forma en que miras al mundo me transmite mucha paz.",
+    "Uno de mis detalles favoritos de ti. Simply beautiful.",
+    "Tu risa es la melodía más bonita que conozco. Mon amour.",
+    "Guardar fotos tuyas es guardar un trocito de felicidad.",
+    "Eres hermosa en cada instante. You take my breath away."
+  ]
+}

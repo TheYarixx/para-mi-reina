@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Experiencia romántica vintage de cumpleaños dedicada a ti en tu día especial."
+    />
+    <title>Un regalo para ti · Happy Birthday, mon amour</title>
+    <link rel="icon" href="assets/img/decorative/blue-butterfly.jpg" type="image/jpeg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Great+Vibes&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/animations.css" />
+    <link rel="stylesheet" href="assets/css/sections.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+  </head>
+  <body class="page-memories experience-locked">
+    <div
+      id="intro-gate"
+      class="intro-overlay"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="intro-gate-phrase"
+    >
+      <div class="intro-card">
+        <p id="intro-gate-phrase" class="intro-card__phrase">
+          “Antes de todo, déjame mostrarte algo que siempre me recuerda a ti...”
+        </p>
+        <button
+          id="start-experience"
+          class="button-love intro-card__button"
+          type="button"
+          aria-label="Comenzar experiencia romántica"
+        >
+          Comenzar
+        </button>
+      </div>
+    </div>
+
+    <div
+      class="layer-particles"
+      id="particles-layer"
+      aria-hidden="true"
+    ></div>
+
+    <header class="navbar" aria-label="Cabecera del proyecto">
+      <div class="navbar__top">
+        <a class="navbar__brand" href="#hero">for you · pour toi</a>
+        <div
+          id="floating-music-player"
+          class="floating-music-player player-music--hidden"
+          aria-label="Reproductor de música romántica"
+          aria-hidden="true"
+        >
+          <button
+            id="player-toggle"
+            class="floating-music-player__toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="player-controls"
+            aria-label="Abrir controles de música"
+          >
+            <span class="floating-music-player__note" aria-hidden="true">♫</span>
+            <span class="floating-music-player__toggle-text">Música</span>
+          </button>
+          <div class="floating-music-player__meta">
+            <strong>Zombie Lady</strong>
+            <span>Damiano David</span>
+          </div>
+          <div id="player-controls" class="floating-music-player__controls">
+            <button
+              id="player-volume-down"
+              type="button"
+              aria-label="Disminuir volumen"
+            >
+              −
+            </button>
+            <button id="player-play-pause" type="button" aria-label="Pausar música">
+              Pausar
+            </button>
+            <button
+              id="player-volume-up"
+              type="button"
+              aria-label="Aumentar volumen"
+            >
+              +
+            </button>
+          </div>
+        </div>
+      </div>
+      <nav class="navbar__menu" aria-label="Navegación principal">
+        <a href="#hero">Inicio</a>
+        <a href="#timeline">Historia</a>
+        <a href="#gallery">Galería</a>
+        <a href="#counter">Tiempo</a>
+        <a href="#letter">Carta</a>
+        <a href="#meteor">Universo</a>
+      </nav>
+    </header>
+
+    <section id="hero" class="intro-floral" aria-labelledby="hero-title">
+      <div class="intro-floral__scene" aria-hidden="true">
+        <div class="night"></div>
+        <div class="lilies">
+          <div class="lily lily--1">
+            <div class="lily__leaves lily__leaves--1">
+              <div class="lily__leaf lily__leaf--1"></div>
+              <div class="lily__leaf lily__leaf--2"></div>
+              <div class="lily__leaf lily__leaf--3"></div>
+              <div class="lily__leaf lily__leaf--4"></div>
+              <div class="lily__core-white"></div>
+              <div class="lily__glow lily__glow--1"></div>
+              <div class="lily__glow lily__glow--2"></div>
+              <div class="lily__glow lily__glow--3"></div>
+              <div class="lily__glow lily__glow--4"></div>
+              <div class="lily__glow lily__glow--5"></div>
+              <div class="lily__glow lily__glow--6"></div>
+              <div class="lily__glow lily__glow--7"></div>
+              <div class="lily__glow lily__glow--8"></div>
+            </div>
+            <div class="lily__stem">
+              <div class="lily__stem__leaf lily__stem__leaf--1"></div>
+              <div class="lily__stem__leaf lily__stem__leaf--2"></div>
+              <div class="lily__stem__leaf lily__stem__leaf--3"></div>
+              <div class="lily__stem__leaf lily__stem__leaf--4"></div>
+              <div class="lily__stem__leaf lily__stem__leaf--5"></div>
+              <div class="lily__stem__leaf lily__stem__leaf--6"></div>
+            </div>
+          </div>
+
+          <div class="lily lily--2">
+            <div class="lily__leaves lily__leaves--2">
+              <div class="lily__leaf lily__leaf--1"></div>
+              <div class="lily__leaf lily__leaf--2"></div>
+              <div class="lily__leaf lily__leaf--3"></div>
+              <div class="lily__leaf lily__leaf--4"></div>
+              <div class="lily__core-white"></div>
+              <div class="lily__glow lily__glow--1"></div>
+              <div class="lily__glow lily__glow--2"></div>
+              <div class="lily__glow lily__glow--3"></div>
+              <div class="lily__glow lily__glow--4"></div>
+              <div class="lily__glow lily__glow--5"></div>
+              <div class="lily__glow lily__glow--6"></div>
+              <div class="lily__glow lily__glow--7"></div>
+              <div class="lily__glow lily__glow--8"></div>
+            </div>
+            <div class="lily__stem">
+              <div class="lily__stem__leaf lily__stem__leaf--1"></div>
+              <div class="lily__stem__leaf lily__stem__leaf--2"></div>
+              <div class="lily__stem__leaf lily__stem__leaf--3"></div>
+              <div class="lily__stem__leaf lily__stem__leaf--4"></div>
+            </div>
+          </div>
+
+          <div class="lily lily--3">
+            <div class="lily__leaves lily__leaves--3">
+              <div class="lily__leaf lily__leaf--1"></div>
+              <div class="lily__leaf lily__leaf--2"></div>
+              <div class="lily__leaf lily__leaf--3"></div>
+              <div class="lily__leaf lily__leaf--4"></div>
+              <div class="lily__core-white"></div>
+              <div class="lily__glow lily__glow--1"></div>
+              <div class="lily__glow lily__glow--2"></div>
+              <div class="lily__glow lily__glow--3"></div>
+              <div class="lily__glow lily__glow--4"></div>
+              <div class="lily__glow lily__glow--5"></div>
+              <div class="lily__glow lily__glow--6"></div>
+              <div class="lily__glow lily__glow--7"></div>
+              <div class="lily__glow lily__glow--8"></div>
+            </div>
+            <div class="lily__stem">
+              <div class="lily__stem__leaf lily__stem__leaf--1"></div>
+              <div class="lily__stem__leaf lily__stem__leaf--2"></div>
+              <div class="lily__stem__leaf lily__stem__leaf--3"></div>
+              <div class="lily__stem__leaf lily__stem__leaf--4"></div>
+            </div>
+          </div>
+
+          <div class="grass-growing">
+            <div class="lily__grass lily__grass--1">
+              <div class="lily__grass--top"></div>
+              <div class="lily__grass--base"></div>
+              <div class="lily__grass__leaf lily__grass__leaf--1"></div>
+              <div class="lily__grass__leaf lily__grass__leaf--2"></div>
+              <div class="lily__grass__leaf lily__grass__leaf--3"></div>
+              <div class="lily__grass__leaf lily__grass__leaf--4"></div>
+              <div class="lily__grass__leaf lily__grass__leaf--5"></div>
+              <div class="lily__grass__leaf lily__grass__leaf--6"></div>
+              <div class="lily__grass__leaf lily__grass__leaf--7"></div>
+              <div class="lily__grass__leaf lily__grass__leaf--8"></div>
+              <div class="lily__grass__overlay"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__content reveal">
+        <div class="hero__butterfly-badge">
+          <img src="assets/img/decorative/blue-butterfly.jpg" alt="Mariposa azul" class="hero__butterfly-img" />
+        </div>
+        <p class="hero__badge">15 de octubre • Happy Birthday, mon amour</p>
+        <h1 id="hero-title">isabela</h1>
+        <p class="hero__phrase">La persona que ilumina mi mundo</p>
+        <p class="hero__subtitle">
+          Hoy celebro tu existencia, tus sueños y lo increíblemente feliz que me haces todos los días. Joyeux anniversaire!
+        </p>
+        <button id="love-you-button" class="button-love" type="button">
+          Ver nuestra historia
+        </button>
+      </div>
+    </section>
+
+    <section id="timeline" class="section section--history reveal">
+      <div class="section__container">
+        <h2>Nuestra historia</h2>
+        <p class="section__text" id="timeline-subtitle">
+          Algunas fechas y momentos que cuentan lo mucho que amarte se ha vuelto parte de mí.
+        </p>
+        
+        <!-- Este es el contenedor que debe quedar vacío para el JS -->
+        <div class="timeline-stairs" id="timeline-list"></div>
+        
+        <p class="timeline__closing" id="timeline-closing"></p>
+      </div>
+    </section>
+
+    <section
+      id="gallery"
+      class="section section--gallery reveal"
+      aria-labelledby="gallery-title"
+    >
+      <div class="section__container">
+        <h2 id="gallery-title">Las pequeñas cosas que me recuerdan a ti</h2>
+        <p class="section__text" id="gallery-subtitle">
+          Cada mirada, cada sonrisa y cada instante tuyo guardado como un tesoro.
+        </p>
+        <div class="gallery" id="gallery-grid"></div>
+      </div>
+    </section>
+
+    <section
+      id="counter"
+      class="section section--time reveal"
+      aria-labelledby="counter-title"
+    >
+      <div class="time-hearts" id="time-hearts" aria-hidden="true"></div>
+      <div class="section__container">
+        <h2 id="counter-title">
+          Cuánto tiempo llevo teniendo la suerte de amarte
+        </h2>
+        <p class="section__text" id="counter-start-label">Desde 16 de Julio de 2026</p>
+        <div class="counter" id="counter-numbers">
+          <article class="counter__card">
+            <p class="counter__value" id="counter-days">0</p>
+            <p class="counter__label">Días</p>
+          </article>
+          <article class="counter__card">
+            <p class="counter__value" id="counter-hours">00</p>
+            <p class="counter__label">Horas</p>
+          </article>
+          <article class="counter__card">
+            <p class="counter__value" id="counter-minutes">00</p>
+            <p class="counter__label">Minutos</p>
+          </article>
+          <article class="counter__card">
+            <p class="counter__value" id="counter-seconds">00</p>
+            <p class="counter__label">Segundos</p>
+          </article>
+        </div>
+        <article class="summary-relationship reveal" id="summary-relationship">
+          <div class="summary-relationship__item">
+            <p class="summary-relationship__value" id="summary-years">0</p>
+            <p class="summary-relationship__label">Años</p>
+          </div>
+          <div class="summary-relationship__item">
+            <p class="summary-relationship__value" id="summary-months">0</p>
+            <p class="summary-relationship__label">Meses</p>
+          </div>
+          <div class="summary-relationship__item">
+            <p class="summary-relationship__value" id="summary-days">0</p>
+            <p class="summary-relationship__label">Días</p>
+          </div>
+        </article>
+        <p class="section__text section__text--final">
+          Y a cada segundo, amarte sigue siendo la mejor parte de mi vida.
+        </p>
+      </div>
+    </section>
+
+    <section
+      id="letter"
+      class="section section--letter reveal"
+      aria-labelledby="letter-title"
+    >
+      <div class="section__container">
+        <h2 id="letter-title">Una carta para ti · Pour toi</h2>
+        <p class="letter__badge-fixed" id="letter-badge">
+          15 de octubre · Happy Birthday, mon amour
+        </p>
+
+        <div class="envelope-scene" id="envelope-scene">
+          <div class="envelope" aria-hidden="true">
+            <div class="envelope__top"></div>
+            <div class="envelope__front"></div>
+            <div class="envelope__side envelope__side--left"></div>
+            <div class="envelope__side envelope__side--right"></div>
+          </div>
+
+          <article class="letter" id="letter-card">
+            <div class="letter__header-decor">
+              <img src="assets/img/decorative/blue-butterfly.jpg" alt="Mariposa azul decorativa" class="letter__butterfly-stamp" />
+            </div>
+            <div class="letter__content" id="letter-content"></div>
+            <p class="letter__signature" id="letter-signature"></p>
+          </article>
+          <button
+            id="open-letter-button"
+            class="button-love button-love--letter"
+            type="button"
+          >
+            Abrir carta
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="meteor"
+      class="section section--meteors reveal"
+      aria-labelledby="meteor-title"
+    >
+      <div class="meteors-scene" id="meteors-scene" aria-hidden="true"></div>
+      <div class="section__container section__container--meteors">
+        <h2 id="meteor-title">Nuestro universo en movimiento</h2>
+        <p class="section__text">
+          Pensamientos y palabras cruzando el firmamento de lo que siento por ti.
+        </p>
+      </div>
+    </section>
+
+    <footer class="closing reveal">
+      <p>Gracias por existir y por llenar mi vida de luz. Joyeux anniversaire!</p>
+      <button id="back-to-top" class="button-secondary" type="button">
+        Voltar al inicio
+      </button>
+    </footer>
+
+    <div
+      class="lightbox"
+      id="lightbox"
+      hidden
+      aria-hidden="true"
+      role="dialog"
+      aria-label="Visualización de la foto"
+    >
+      <button
+        class="lightbox__close"
+        id="lightbox-close"
+        type="button"
+        aria-label="Cerrar visualización"
+      >
+        ×
+      </button>
+      <figure class="lightbox__figure">
+        <img id="lightbox-image" src="" alt="" />
+        <figcaption id="lightbox-caption"></figcaption>
+      </figure>
+    </div>
+
+    <audio
+      id="global-love-song"
+      preload="metadata"
+      src="assets/audio/Damiano David - Zombie Lady.mp3"
+    ></audio>
+
+    <script src="assets/js/intro.js" defer></script>
+    <script src="assets/js/timeline.js" defer></script>
+    <script src="assets/js/gallery.js" defer></script>
+    <script src="assets/js/counter.js" defer></script>
+    <script src="assets/js/effects.js" defer></script>
+    <script src="assets/js/meteor.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+  </body>
+</html>

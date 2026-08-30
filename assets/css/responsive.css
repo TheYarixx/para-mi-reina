@@ -1,0 +1,282 @@
+@media (max-width: 1280px) {
+  .gallery {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 1080px) {
+  .gallery {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .counter {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .section {
+    padding: 6.3rem 1rem;
+  }
+
+  #letter.section--letter-open .envelope-scene {
+    margin-top: 4.8rem;
+  }
+
+  .envelope {
+    width: min(640px, 86vw);
+  }
+
+  .letter {
+    width: min(92vw, 900px);
+    max-height: none;
+    overflow: visible;
+    transform: translate3d(-50%, 56%, 0) scale(0.95);
+  }
+
+  .envelope-scene--open .letter {
+    transform: translate3d(-50%, 8%, 0) scale(1);
+  }
+}
+
+@media (max-width: 900px) {
+  :root {
+    --navbar-height: 108px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.55rem;
+  }
+
+  .navbar__menu {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .hero__content {
+    padding: 6.4rem 1rem 5rem;
+  }
+
+  .timeline-stairs {
+    gap: 1.5rem;
+  }
+  /* Oculta la línea vertical, las horizontales y los puntos dorados */
+  .timeline-stairs::before,
+  .timeline-stairs__card::before,
+  .timeline-stairs__card::after {
+    display: none;
+  }
+  /* Todas las tarjetas ocupan el ancho completo sin margen lateral */
+  .timeline-stairs__card,
+  .timeline-stairs__card:nth-child(even) {
+    width: 100%;
+    margin: 0;
+    align-self: stretch;
+    transform: none !important;
+  }
+
+  .timeline__closing {
+    font-size: clamp(0.74rem, 2.8vw, 0.9rem);
+    white-space: nowrap;
+  }
+
+  .summary-relationship {
+    gap: 0.75rem;
+  }
+
+  #letter.section--letter-open .envelope-scene {
+    margin-top: 4.2rem;
+  }
+
+  .button-love--letter {
+    bottom: 7%;
+  }
+
+  .envelope-scene--open .button-love--letter {
+    bottom: 2.4%;
+  }
+
+  .section--meteors {
+    min-height: 100vh;
+  }
+}
+
+@media (max-width: 680px) {
+  .navbar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.45rem;
+  }
+
+  .navbar__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    width: 100%;
+  }
+
+  .navbar__brand {
+    min-width: 0;
+    font-size: clamp(0.95rem, 4vw, 1.18rem);
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .navbar__menu {
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 0;
+    overflow: visible;
+  }
+
+  .navbar__menu a {
+    flex: 0 1 auto;
+    padding: 0.3rem 0.2rem;
+    font-size: clamp(0.75rem, 2.75vw, 0.8rem);
+    white-space: nowrap;
+  }
+
+  .floating-music-player {
+    position: static;
+    right: auto;
+    bottom: auto;
+    flex: 0 0 auto;
+    margin-right: 0;
+  }
+
+  .floating-music-player__toggle {
+    min-width: 48px;
+    padding: 0.5rem;
+  }
+
+  .floating-music-player__toggle-text {
+    display: none;
+  }
+
+  .section {
+    padding: 5.7rem 0.85rem;
+  }
+
+  .hero__subtitle,
+  .section__text {
+    font-size: 0.98rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+  }
+
+  .gallery__phrase-line,
+  .gallery > p[data-frase-linha] {
+    font-size: 0.96rem;
+    gap: 0.65rem;
+  }
+
+  .summary-relationship {
+    grid-template-columns: 1fr;
+  }
+
+  .letter {
+    width: min(94vw, 720px);
+    max-height: none;
+    overflow: visible;
+    padding: 1.2rem 1.05rem;
+  }
+
+  #letter.section--letter-open .envelope-scene {
+    margin-top: 3.8rem;
+  }
+
+  .button-love--letter {
+    min-width: 160px;
+    bottom: 6%;
+  }
+
+  .meteor-image {
+    width: 72px;
+  }
+}
+
+@media (max-width: 460px) {
+  .navbar__menu a {
+    font-size: 0.82rem;
+    padding: 0.32rem 0.52rem;
+  }
+
+  .hero__content {
+    padding-top: 5.6rem;
+  }
+
+  .button-love,
+  .button-secondary {
+    width: 100%;
+    max-width: 290px;
+  }
+
+  .counter {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .letter {
+    width: min(95vw, 560px);
+    max-height: none;
+    overflow: visible;
+  }
+
+  #letter.section--letter-open .envelope-scene {
+    margin-top: 3.3rem;
+  }
+
+  .button-love--letter {
+    min-width: 150px;
+    bottom: 5.4%;
+  }
+}
+@media (max-width: 900px) {
+  .floating-music-player {
+    right: max(0.75rem, env(safe-area-inset-right));
+    bottom: max(0.75rem, env(safe-area-inset-bottom));
+  }
+
+  .intro-card {
+    width: min(94vw, 760px);
+    padding: 1.5rem 1.25rem;
+  }
+
+  .intro-card__phrase {
+    font-size: clamp(1.25rem, 4.4vw, 2rem);
+  }
+}
+
+@media (max-width: 520px) {
+  .floating-music-player {
+    gap: 0.4rem;
+  }
+
+  .player-music--expanded {
+    flex-wrap: wrap;
+    border-radius: 1rem;
+  }
+
+  .player-music--expanded .floating-music-player__meta {
+    width: 100%;
+    order: 3;
+    text-align: center;
+  }
+
+  .floating-music-player__meta {
+    min-width: 0;
+  }
+
+  .floating-music-player__controls {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .intro-card__button {
+    width: 100%;
+  }
+}
