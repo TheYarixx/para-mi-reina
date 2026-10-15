@@ -1,13 +1,9 @@
 # 💌 Romantic Experience Web
 
 <p align="center">
-  <a href="https://github.com/lucas-hochmann-rosa/romantic-experience-web">
+  <a href="https://theyarixx.github.io/para-mi-reina/">
     <img src="https://img.shields.io/badge/GitHub-romantic--experience--web-181717?style=for-the-badge&logo=github" alt="Repository GitHub">
-  </a>
-  <a href="https://www.linkedin.com/in/lucas-hochmann-rosa">
-    <img src="https://img.shields.io/badge/LinkedIn-Lucas_Hochmann_Rosa-0A66C2?style=for-the-badge&logo=linkedin" alt="LinkedIn Lucas Hochmann Rosa">
-  </a>
-  <a href="https://lucas-hochmann-rosa.github.io/romantic-experience-web/">
+  <a href="https://theyarixx.github.io/para-mi-reina/">
     <img src="https://img.shields.io/badge/Page-Web-ff69b4?style=for-the-badge" alt="Web Page">
   </a>
   <a href="./LICENSE">
@@ -15,7 +11,7 @@
   </a>
 </p>
 
-<p align="center"><a href="README.md">🇧🇷 Português</a> · 🇺🇸 English</p>
+<p align="center"><a href="README.md">🇺🇸 English</p>
 
 > Romantic experience I created for Maria Paula Rossetti Siqueira, built as a static website using HTML, CSS/SCSS, and vanilla JavaScript, featuring a nighttime aesthetic, a chapter-based narrative, and a floral opening animation.
 
