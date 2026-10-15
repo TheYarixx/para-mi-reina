@@ -11,170 +11,98 @@
   </a>
 </p>
 
-<p align="center"><a href="README.md">🇺🇸 English</p>
+# Un regalo para ti
 
-> Romantic experience I created for Maria Paula Rossetti Siqueira, built as a static website using HTML, CSS/SCSS, and vanilla JavaScript, featuring a nighttime aesthetic, a chapter-based narrative, and a floral opening animation.
+Experiencia romántica interactiva creada como una página web estática y personalizada para Isabel Yung. La web combina una bienvenida animada, recuerdos, una carta y música en una sola página adaptable a móviles y escritorio.
 
----
+## Contenido de la web
 
-## 📌 Overview
+- **Bienvenida:** una pantalla inicial que da paso a la experiencia tras pulsar «Comenzar».
+- **Portada floral:** lirios animados, una mariposa decorativa y un mensaje de cumpleaños.
+- **Nuestra historia:** una cronología de fechas y recuerdos cargada desde JSON.
+- **Galería:** 12 fotografías con textos, carga diferida y visor ampliado (lightbox).
+- **Contador:** tiempo transcurrido desde el 16 de julio de 2026, actualizado cada segundo y desglosado en días, horas, minutos y segundos; incluye también el resumen en años, meses y días.
+- **Carta:** carta personalizada cargada desde JSON y presentada en un sobre animado que se puede abrir y cerrar.
+- **Universo en movimiento:** estrellas, frases y fotografías que cruzan una escena animada.
+- **Música:** reproductor flotante para «Zombie Lady», de Damiano David, con controles de reproducción y volumen.
+- **Detalles de interacción:** navegación entre secciones, botón para volver al inicio, elementos que aparecen al desplazarse, partículas y corazones animados. El efecto parallax se desactiva si el sistema tiene activada la preferencia para reducir el movimiento.
 
-**Romantic Experience Web** was built as an interactive digital gift, focused on performance, simple maintenance and a fully static setup.
-
-Main flow:
-
-- Entry screen with a romantic phrase and a **Start** button.
-- Local song starts at second 23 after the user's first interaction.
-- The full experience is revealed as a single page.
-- A fixed player at the top controls the same audio instance throughout.
-
----
-
-## ✨ Key Features
-
-- Floral opening built directly into the main hero section on the index page.
-- Anchor navigation (`Home`, `Story`, `Gallery`, `Time`, `Letter`, `Meteors`).
-- Dynamic timeline driven by JSON data.
-- Local gallery with 45 images and a responsive layout.
-- Real-time relationship duration counter.
-- Closing letter with an envelope-opening animation.
-- Meteor section with animated phrases and images.
-- Music player with `play/pause`, `volume +` and `volume -`.
-
----
-
-## 🧭 Table of Contents
-
-- [Architecture](#-architecture)
-- [Tech Stack](#-tech-stack)
-- [Project Ground Rules](#-project-ground-rules)
-- [Requirements](#-requirements)
-- [Installation](#-installation)
-- [Usage](#-usage)
-- [Static Publishing (GitHub Pages)](#-static-publishing-github-pages)
-- [Disclaimer](#-disclaimer)
-- [Author](#-author)
-- [License](#-license)
-
----
-
-## 🏗️ Architecture
+## Estructura del proyecto
 
 ```text
-romantic-experience-web/
+.
 ├── index.html
-├── assets/
-│   ├── audio/
-│   │   └── Di Paullo e Paulino - No céu dos braços teus.mp3
-│   ├── css/
-│   │   ├── main.css                # Compiled from assets/scss/main.scss
-│   │   ├── sections.css            # Plain CSS, hand-maintained
-│   │   ├── animations.css          # Plain CSS, hand-maintained
-│   │   └── responsive.css          # Plain CSS, hand-maintained
-│   ├── scss/
-│   │   └── main.scss               # The project's only real Sass source
-│   ├── data/
-│   │   ├── timeline.json
-│   │   ├── gallery.json
-│   │   └── letter.json
-│   ├── img/
-│   │   ├── flowers.png
-│   │   ├── decorative/
-│   │   └── gallery/
-│   │       └── provas-do-meu-amor/
-│   └── js/
-│       ├── main.js
-│       ├── intro.js
-│       ├── timeline.js
-│       ├── gallery.js
-│       ├── counter.js
-│       ├── effects.js
-│       └── meteor.js
 ├── LICENSE
-└── README.md
+├── README.md
+└── assets/
+    ├── audio/
+    │   └── Damiano David - Zombie Lady.mp3
+    ├── css/
+    │   ├── main.css
+    │   ├── sections.css
+    │   ├── animations.css
+    │   └── responsive.css
+    ├── data/
+    │   ├── gallery.json
+    │   ├── letter.json
+    │   └── timeline.json
+    ├── img/
+    │   ├── flowers.png
+    │   ├── decorative/
+    │   └── gallery/
+    │       └── provas-do-meu-amor/
+    ├── js/
+    │   ├── counter.js
+    │   ├── effects.js
+    │   ├── gallery.js
+    │   ├── intro.js
+    │   ├── main.js
+    │   ├── meteor.js
+    │   └── timeline.js
+    └── scss/
+        └── main.scss
 ```
 
-### Organization
+`index.html` contiene las secciones y carga los estilos y scripts. Los módulos de `assets/js/` inicializan la interacción de cada parte; `main.js` coordina la carta, la bienvenida, la música y el arranque. La cronología, la galería y la carta obtienen su contenido de `assets/data/`. Los estilos se separan entre la hoja principal, los estilos de secciones, las animaciones y las reglas adaptables.
 
-- **`index.html`** → single structure holding every section of the experience
-- **`assets/js/`** → one module per section (`window.MemoriesX.init()`), orchestrated by `main.js`
-- **`assets/data/`** → dynamic content (timeline, gallery, letter) consumed via `fetch`, with a local fallback if it fails
-- **`assets/scss/main.scss`** → the only real Sass source; the remaining files in `assets/css/` are plain CSS, written and maintained directly (no Sass source)
+## Personalizar el contenido
 
----
+- **Cronología:** edita `assets/data/timeline.json`. Cada evento incluye `date`, `title` y `text`; también puedes cambiar el subtítulo y el mensaje de cierre.
+- **Galería:** edita `assets/data/gallery.json` para actualizar el subtítulo, las imágenes, sus textos alternativos y sus pies de foto. Las rutas de las imágenes deben apuntar a archivos dentro de `assets/`.
+- **Carta:** edita `assets/data/letter.json` para cambiar el distintivo, los párrafos y la firma.
+- **Fecha del contador:** cambia `rawDateStr` en `assets/js/counter.js` y actualiza el texto visible «Desde 16 de Julio de 2026» en `index.html` para que ambos coincidan. La fecha del script usa el formato ISO con zona horaria.
+- **Portada y textos estáticos:** actualiza los textos correspondientes directamente en `index.html`.
+- **Música e imágenes:** sustituye los archivos de `assets/audio/` o `assets/img/` y actualiza sus rutas en `index.html`, JSON o scripts, según dónde se utilicen.
+- **Estilos:** los CSS se cargan directamente desde `assets/css/`. Si modificas `assets/scss/main.scss`, compílalo para actualizar `assets/css/main.css`; los otros CSS se mantienen directamente.
 
-## 🧰 Tech Stack
+Los archivos JSON se solicitan mediante `fetch`, por lo que la web debe abrirse desde un servidor HTTP local o un alojamiento estático, no directamente como archivo (`file://`). Si la carga de la galería o la cronología falla, sus scripts disponen de contenido de respaldo.
 
-- Semantic HTML5
-- CSS3 + Sass (`main.scss`, compiled locally - e.g. with VS Code's "Live Sass Compile" extension or `npx sass`)
-- Vanilla JavaScript (no framework, no build step)
-- Local JSON for dynamic content
+## Requisitos y ejecución local
 
----
-
-## 📐 Project Ground Rules
-
-- Identifiers, classes, IDs, JSON keys, and function names stay in English.
-- All visible text (titles, buttons, letter paragraphs, captions) stays in Portuguese: it's the experience itself, written for one specific person.
-- Code comments, where present, stay in Portuguese and are reserved for non-obvious decisions.
-- No build step is required to run the site - only the Sass needs manual compilation when editing `main.scss`.
-
----
-
-## ⚙️ Requirements
-
-- Any static HTTP server for local development (e.g. `npx serve`)
-- Node.js only if recompiling `assets/scss/main.scss` (via `npx sass`)
-
----
-
-## 🔧 Installation
+No se requiere framework ni proceso de compilación para ejecutar la web. Solo necesitas un servidor HTTP estático. Por ejemplo, con Python instalado:
 
 ```bash
-git clone https://github.com/lucas-hochmann-rosa/romantic-experience-web.git
-cd romantic-experience-web
-npx serve .
+py -m http.server 8000
 ```
 
-Open:
+Después, abre <http://localhost:8000/>. También puedes usar cualquier otro servidor estático desde la carpeta raíz del proyecto.
 
-- `http://localhost:3000/index.html`
-
----
-
-## ▶️ Usage
-
-To recompile the main stylesheet after editing `assets/scss/main.scss`:
+Para compilar el Sass tras editar `assets/scss/main.scss`, con Sass disponible:
 
 ```bash
 npx sass assets/scss/main.scss assets/css/main.css
 ```
 
-The other files in `assets/css/` (`sections.css`, `animations.css`, `responsive.css`) are plain CSS and can be edited directly, with no compilation step.
+## Publicación
 
----
+Al ser un sitio estático, puede alojarse en GitHub Pages u otro servicio de alojamiento estático. El repositorio no incluye actualmente un flujo de despliegue configurado; publica la carpeta raíz que contiene `index.html` y `assets/`.
 
-## 🌐 Static Publishing (GitHub Pages)
+## Contenido y licencia
 
-The project is published as a static site directly by GitHub Pages, from the `develop` branch.
+Esta web contiene fotografías, textos y una canción asociados a una experiencia personal. La licencia MIT del repositorio se conserva tal como aparece en [LICENSE](./LICENSE) y se refiere al software; no debe interpretarse como una licencia de uso de esos contenidos personales o de recursos de terceros. Comprueba los derechos y permisos aplicables antes de reutilizarlos o publicarlos.
 
----
+El aviso de copyright del software identifica a Lucas Hochmann Rosa, según el archivo de licencia conservado.
 
-## ⚠️ Disclaimer
-
-This is a personal gift, with photos, audio and text meant for one specific person. The code is open for reference and reuse of its structure, but the content (photos, letter, phrases) is private.
-
----
-
-## 👨‍💻 Author
-
-**Lucas Hochmann Rosa**
-
-- GitHub: <https://github.com/lucas-hochmann-rosa>
-- Page: <https://lucas-hochmann-rosa.github.io/romantic-experience-web/>
-- LinkedIn: <https://www.linkedin.com/in/lucas-hochmann-rosa>
-
----
 
 ## 📄 License
 
